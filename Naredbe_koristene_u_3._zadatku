@@ -1,0 +1,115 @@
+karlo@karlo-Dell-System-XPS-L322X:~$ cd /home/karlo/projekt
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ touch README.md
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git init
+Initialized empty Git repository in /home/karlo/projekt/.git/
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git add .
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   backup.tar.gz
+	new file:   backup.txt
+	new file:   backup2.tar.gz
+	new file:   backup2.txt
+	new file:   zad1
+	new file:   zad2
+	new file:   zad6
+	new file:   zad7
+	new file:   zad8
+
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git add .
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   backup.tar.gz
+	new file:   backup.txt
+	new file:   backup2.tar.gz
+	new file:   backup2.txt
+	new file:   zad1
+	new file:   zad2
+	new file:   zad6
+	new file:   zad7
+
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git add .
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   zad1
+	new file:   zad2
+	new file:   zad6
+	new file:   zad7
+
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git commit -m "First commit"
+[master (root-commit) e4dbb86] First commit
+ 5 files changed, 19 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 zad1
+ create mode 100644 zad2
+ create mode 100644 zad6
+ create mode 100644 zad7
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git remote add origin https://github.com/KarloStrbad/projekt.git
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git remote
+origin
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git remote add origin git@github.com/KarloStrbad/projekt.git
+fatal: remote origin already exists.
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git remote -v
+origin	https://github.com/KarloStrbad/projekt.git (fetch)
+origin	https://github.com/KarloStrbad/projekt.git (push)
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git push -u origin master
+Username for 'https://github.com': KarloStrbad
+Password for 'https://KarloStrbad@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 702 bytes | 702.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/KarloStrbad/projekt.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git add README.md
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git commit -m "First commit"
+[master ce4bb9d] First commit
+ 1 file changed, 1 insertion(+)
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git remote -v
+origin	https://github.com/KarloStrbad/projekt.git (fetch)
+origin	https://github.com/KarloStrbad/projekt.git (push)
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git push -u origin master
+Username for 'https://github.com': KarloStrbad
+Password for 'https://KarloStrbad@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 401 bytes | 401.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/KarloStrbad/projekt.git
+   e4dbb86..ce4bb9d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ git diff
+karlo@karlo-Dell-System-XPS-L322X:~/projekt$ 
+
