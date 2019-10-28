@@ -1,5 +1,0 @@
-#!/bin/bash
-
-declare -r nmin=1
-find /home/karlo -type f -mtime -"$nmin" >> backup.txt
-tar -czvf backup.tar.gz backup.txt

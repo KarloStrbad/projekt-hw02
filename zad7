@@ -1,6 +1,0 @@
-#!/bin/bash
-
-declare -r nmin=1
-let time=60*nmin
-
-while true; do w >> log_history.log; sleep "$time"; done

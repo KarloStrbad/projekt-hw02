@@ -1,5 +1,0 @@
-#!/bin/bash
-
-declare -r nsize=1M
-find /home/karlo -type f -size -"$nsize" >> backup2.txt
-tar -czvf backup2.tar.gz backup2.txt
