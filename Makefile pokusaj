@@ -1,0 +1,19 @@
+SRC=$(wildcard src/*c)
+OBJ=$(patsubst %c, %o, $(SRC))
+INC=inc/
+
+CFLAGS=-I $(INC)
+EXE=exe/%.elf
+
+.SECONDARY:
+
+all: $(EXE)
+
+$(EXE): $(OBJ)
+        gcc $(OBJ) -o $@ -lm
+
+%.o: %.c
+        gcc -c $< $(CFLAGS) -o $@
+
+clean:
+        rm -f $(OBJ) $(EXE)
